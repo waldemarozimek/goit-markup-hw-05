@@ -403,3 +403,41 @@ section {
 .social-media-backlight:focus {
   background-color: var(--green);
 }
+.footer-subscribe {
+  margin-left: auto;
+}
+.input-footer {
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  color: var(--white);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+  outline: none;
+  align-content: center;
+  align-items: baseline;
+  background-color: transparent;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.input-footer::placeholder {
+  color: var(--white);
+  font-size: 12px;
+}
+.subscribe-button {
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  background: var(--iris);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--white);
+}

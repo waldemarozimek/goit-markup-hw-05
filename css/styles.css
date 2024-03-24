@@ -436,14 +436,15 @@ section {
 .subscribe-button {
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background: var(--iris);
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
+  border: none;
   text-align: center;
   color: var(--white);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -453,5 +454,9 @@ section {
   justify-content: center;
 }
 .subscribe-button-icon {
-  
+  fill: var(--white);
+  margin-left: 16px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* --------modal--modal------------------------------------ */
+

@@ -566,7 +566,7 @@
       <div class="form-area">
         <label class="form-descriptipon" for="phone">Phone</label>
         <div class="area">
-          <input type="text" name="phone" id="phone" class="form-input" />
+          <input type="tel" name="phone" id="phone" class="form-input" />
           <svg class="icon-form" width="18" height="24">
             <use href="./images/icons.svg#icon-phone"></use>
           </svg>
@@ -581,28 +581,31 @@
             <use href="./images/icons.svg#icon-email"></use>
           </svg>
         </div>
-        <div class="form-area-text">
+        <div class="form-area last">
           <label class="form-descriptipon" for="user-comment">Comment</label>
           <textarea
-            class="styled-textarea"
+            class="styled-text-area"
             name="user-comment"
             id="user-comment"
             placeholder="Text input"
           >
           </textarea>
         </div>
-      </div>
-      <div class="privacy-policy-checkbox">
+        <div class="privacy-policy-checkbox">
         <input
           type="checkbox"
           id="user-privacy"
           value="true"
           name="user-privacy"
-          class="visually-hidden"
+          class="check visually-hidden"
+          required
         />
-        <label class="privacy-accept-checkbox" for="user-privacy"
-          >I accept the terms and conditions of the</label
-        >
+        <label class="form-descriptipon" for="user-privacy"
+          ><span class="privacy"><svg class="privacy-icon" width="10" height="8">
+            <use href="./images/"></use>
+          </svg></span>I accept the terms and conditions of the
+          <a href="" class="privacy-link">Privacy Policy</a>    
+          </label>
       </div>
       <button class="send-button" type="submit" name="submit">Send</button>
     </form>

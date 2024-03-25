@@ -481,10 +481,7 @@ section {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background: var(--dairy);
   padding: 72px 24px 24px 24px;
-  border-radius: 4px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .xbutton {
   position: absolute;
@@ -532,10 +529,12 @@ section {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--navy-blue);
 }
-.styled-textarea {
+.styled-text-area {
   width: 100%;
   height: 120px;
   font-size: 12px;
+  font-weight: 400;
+  font-family: var(--font-family);
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--navy-blue-modal);
@@ -546,16 +545,17 @@ section {
   outline: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .form-area {
   margin-bottom: 8px;
 }
-.form-area-text {
-  margin-bottom: 16px
+.last {
+  margin-bottom: 16px;
 }
 .area {
   position: relative;
+  width: 100%;
+  height: 40px;
 }
 .form-descripton {
   font-family: var(--font-family);
@@ -566,13 +566,14 @@ section {
   color: var(--light-slate);
   display: block;
   margin-bottom: 4px;
+  padding: 0;
 }
 .form-input {
   border: 1px solid var(--navy-blue-modal);
   border-radius: 4px;
   width: 100%;
   height: 40px;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.17;
@@ -583,11 +584,10 @@ section {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .send-button {
-  display: block;
   min-width: 169px;
   height: 56px;
-  font-family: var(--font-family);
-  font-size: 16px;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -599,14 +599,34 @@ section {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 16px 32px;
+  margin: 0 auto;
 }
 .privacy-policy-checkbox {
+  display: flex;
   margin-bottom: 24px;
 }
-.privacy-accept-checkbox {
-  font-size: 12px; 
-  line-height: 1.17; 
+/* .privacy-accept-checkbox {
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: ;
-  
+} */
+.privacy {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--navy-blue-modal);
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0, 4, 0, 0, 2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+.privacy-link {
+  color: var(--iris);
+}
+.check {
+  cursor: pointer;
 }

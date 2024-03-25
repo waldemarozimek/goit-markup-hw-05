@@ -545,9 +545,14 @@ section {
   padding: 8px 16px;
   outline: transparent;
   resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .form-area {
   margin-bottom: 8px;
+}
+.form-area-text {
+  margin-bottom: 16px
 }
 .area {
   position: relative;
@@ -597,4 +602,11 @@ section {
 }
 .privacy-policy-checkbox {
   margin-bottom: 24px;
+}
+.privacy-accept-checkbox {
+  font-size: 12px; 
+  line-height: 1.17; 
+  letter-spacing: 0.04em;
+  color: ;
+  
 }

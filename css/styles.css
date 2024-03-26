@@ -627,9 +627,9 @@ section {
   width: 16px;
   height: 16px;
   border: 1px solid var(--navy-blue-modal);
-  border-radius: 4px;
+  border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0, 4, 0, 0, 2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-flex;
   align-items: center;
@@ -641,6 +641,11 @@ section {
 }
 .check {
   cursor: pointer;
+}
+.check:checked + .field-descr span {
+    background-color: var(--ocean);
+    border: none;
+    fill: var(--cloud);
 }
 .icon-close {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);

@@ -617,12 +617,16 @@ section {
   display: flex;
   margin-bottom: 24px;
 }
-/* .privacy-accept-checkbox {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: ;
-} */
+.checkbox {
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+.checkbox:active {
+  background-color: #404bbf;
+}
 .privacy {
   width: 16px;
   height: 16px;
